@@ -1,0 +1,7 @@
+background color: #0F1115
+Main color: #16203C
+Primary accent color: #09CCC7
+Secondary accent: #F87171
+
+Primary Heading Font: Space Grotesk
+Body Font:Manrope
