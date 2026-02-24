@@ -1,383 +1,295 @@
-.desktop {
-  background-color: #0f1115;
-  width: 100%;
-  min-width: 1440px;
-  height: 1024px;
+/* CSS for section section:Header */
+.site-header {
+  background-color: #16203c;
   position: relative;
 }
 
-.desktop .rectangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1440px;
+.header-content {
   height: 76px;
-  background-color: #151f3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.desktop .text-wrapper {
-  position: absolute;
-  top: 19px;
-  left: 120px;
-  font-family: 'Space Grotesk-Regular', Helvetica;
-  font-weight: 400;
+.logo {
+  font-weight: 700;
+  font-size: 24px;
   color: #f9fafb;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
-.desktop .group {
-  position: absolute;
-  width: 0;
-  height: 2.73%;
-  top: 2.54%;
-  left: 84.31%;
+.header-icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
-.desktop .vector {
-  position: absolute;
-  width: 15%;
-  height: 15%;
-  top: 82.32%;
-  left: 77.32%;
+.icon-wrapper {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.desktop .img {
-  position: absolute;
-  width: 15%;
-  height: 15%;
-  top: 82.32%;
-  left: 27.32%;
-}
-
-.desktop .vector-2 {
-  position: absolute;
-  width: 85%;
-  height: 55%;
-  top: 7.32%;
-  left: 12.32%;
-}
-
-.desktop .vector-3 {
-  position: absolute;
-  width: 15%;
-  height: 10%;
-  top: -2.68%;
-  left: -2.68%;
-}
-
-.desktop .vector-4 {
-  position: absolute;
-  width: 87.5%;
-  height: 20%;
-  top: 62.32%;
-  left: 0;
-}
-
-.desktop .div {
-  position: absolute;
-  width: 0;
-  height: 2.73%;
-  top: 2.54%;
-  left: 89.72%;
-}
-
-.desktop .vector-5 {
-  position: absolute;
+.header-border {
+  height: 4px;
   width: 100%;
-  height: 100%;
-  top: -2.68%;
-  left: -2.68%;
+  background: linear-gradient(90deg, #09ccc7 0%, #0f1115 100%);
 }
 
-.desktop .vector-6 {
-  position: absolute;
-  width: 77.29%;
-  height: 14.23%;
-  top: 64.82%;
-  left: 8.68%;
+/* CSS for section section:Hero */
+#section-hero {
+  padding-top: 44px;
+  padding-bottom: 44px;
 }
 
-.desktop .vector-7 {
-  position: absolute;
-  width: 30%;
-  height: 30%;
-  top: 17.32%;
-  left: 32.32%;
+.hero-container {
+  display: flex;
+  gap: 46px;
+  align-items: stretch;
 }
 
-.desktop .group-2 {
-  position: absolute;
-  width: 0;
-  height: 2.73%;
-  top: 2.83%;
-  left: 78.89%;
-}
-
-.desktop .vector-8 {
-  position: absolute;
-  width: 22.22%;
-  height: 22.22%;
-  top: 75.1%;
-  left: 75.1%;
-}
-
-.desktop .vector-9 {
-  position: absolute;
-  width: 88.89%;
-  height: 88.89%;
-  top: -2.68%;
-  left: -2.68%;
-}
-
-.desktop .rectangle-2 {
-  position: absolute;
-  top: 120px;
-  left: 120px;
+/* Sidebar Styles */
+.hero-sidebar {
   width: 260px;
-  height: 420px;
   background-color: #16203c;
   border-radius: 12px;
+  padding: 35px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  min-height: 420px;
 }
 
-.desktop .text-wrapper-2 {
-  top: 231px;
-  left: 164px;
-  font-family: 'Manrope-Regular', Helvetica;
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   color: #f5f5f5;
-  font-size: 32px;
-  line-height: normal;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.desktop .text-wrapper-3 {
-  top: 580px;
-  left: 120px;
-  font-family: 'Manrope-Regular', Helvetica;
+.nav-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.btn-view-all {
+  width: 100%;
+  height: 48px;
+  background-color: #09ccc7;
+  border: none;
+  border-radius: 12px;
   color: #f5f5f5;
-  font-size: 32px;
-  line-height: normal;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
 
-.desktop .text-wrapper-4 {
-  top: 155px;
-  left: 164px;
-  font-family: 'Manrope-Regular', Helvetica;
-  color: #f5f5f5;
-  font-size: 32px;
-  line-height: normal;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
+.btn-view-all:hover {
+  opacity: 0.9;
 }
 
-.desktop .text-wrapper-5 {
-  top: 307px;
-  left: 164px;
-  font-family: 'Manrope-Regular', Helvetica;
-  color: #f5f5f5;
-  font-size: 32px;
-  line-height: normal;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
+/* Banner Styles */
+.hero-banner {
+  flex-grow: 1;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 420px;
 }
 
-.desktop .element {
-  position: absolute;
-  top: 120px;
-  left: 690px;
-  width: 630px;
-  height: 420px;
-  aspect-ratio: 1.5;
-  object-fit: cover;
-}
-
-.desktop .rectangle-3 {
-  position: absolute;
-  top: 120px;
-  left: 426px;
-  width: 264px;
-  height: 420px;
+.banner-content {
   background-color: #070917;
-  border-radius: 12px 0px 0px 12px;
+  width: 264px;
+  padding: 35px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.desktop .text-wrapper-6 {
-  top: 155px;
-  left: 462px;
-  font-family: 'Space Grotesk-Regular', Helvetica;
+.banner-title {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
   color: #f5f5f5;
-  font-size: 56px;
-  line-height: 64px;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
 }
 
-.desktop .p {
-  top: 300px;
-  left: 462px;
-  font-family: 'Space Grotesk-Regular', Helvetica;
+.banner-subtitle {
+  font-size: 16px;
+  line-height: 1.4;
   color: #f5f5f5;
-  font-size: 25px;
-  line-height: 64px;
-  white-space: nowrap;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
+  margin: 0 0 67px 0;
 }
 
-.desktop .rectangle-4 {
-  position: absolute;
-  top: 431px;
-  left: 462px;
+.btn-buy {
   width: 188px;
   height: 48px;
   background-color: #f87171;
+  border: none;
   border-radius: 12px;
-}
-
-.desktop .text-wrapper-7 {
-  top: 423px;
-  left: 485px;
-  font-family: 'Space Grotesk-Regular', Helvetica;
   color: #ffffff;
-  font-size: 20px;
-  line-height: 64px;
-  white-space: nowrap;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
 
-.desktop .ellipse {
-  top: 172px;
-  position: absolute;
-  left: 148px;
-  width: 10px;
-  height: 10px;
-  background-color: #09ccc7;
-  border-radius: 5px;
+.btn-buy:hover {
+  opacity: 0.9;
 }
 
-.desktop .ellipse-2 {
-  top: 248px;
-  position: absolute;
-  left: 148px;
-  width: 10px;
-  height: 10px;
-  background-color: #09ccc7;
-  border-radius: 5px;
+.banner-image-wrapper {
+  flex-grow: 1;
+  position: relative;
 }
 
-.desktop .ellipse-3 {
-  top: 325px;
-  position: absolute;
-  left: 148px;
-  width: 10px;
-  height: 10px;
-  background-color: #09ccc7;
-  border-radius: 5px;
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.desktop .rectangle-5 {
-  position: absolute;
-  top: 431px;
-  left: 153px;
-  width: 198px;
-  height: 48px;
-  background-color: #09ccc7;
+/* CSS for section section:Categories */
+#section-categories {
+  padding-bottom: 80px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f5f5f5;
+  margin-bottom: 24px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.category-card {
+  position: relative;
+  height: 320px;
   border-radius: 12px;
+  overflow: hidden;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-.desktop .text-wrapper-8 {
-  top: 441px;
-  left: 186px;
-  font-family: 'Manrope-Regular', Helvetica;
-  color: #f5f5f5;
-  font-size: 20px;
-  line-height: normal;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
+.category-card:hover {
+  transform: translateY(-4px);
 }
 
-.desktop .group-3 {
-  position: absolute;
-  top: 644px;
-  left: 120px;
-  width: 284px;
-  height: 320px;
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.desktop .mask-group {
+.card-overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 282px;
-  height: 320px;
-}
-
-.desktop .text-wrapper-9 {
-  top: 274px;
-  left: 12px;
-  font-family: 'Manrope-Regular', Helvetica;
-  color: #f5f5f5;
-  font-size: 32px;
-  line-height: normal;
-  position: absolute;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.desktop .vector-10 {
-  position: absolute;
-  width: 3.17%;
-  height: 4.69%;
-  top: 91.02%;
-  left: 91.29%;
-}
-
-.desktop .group-4 {
-  position: absolute;
-  top: 644px;
-  left: 426px;
-  width: 282px;
-  height: 320px;
-}
-
-.desktop .group-5 {
-  position: absolute;
-  top: 644px;
-  left: 732px;
-  width: 282px;
-  height: 320px;
-}
-
-.desktop .group-6 {
-  position: absolute;
-  top: 644px;
-  left: 1038px;
-  width: 282px;
-  height: 320px;
-}
-
-.desktop .rectangle-6 {
-  position: absolute;
-  top: 76px;
-  left: 0;
-  width: 1400px;
-  height: 4px;
+  width: 100%;
+  height: 80px;
   background: linear-gradient(
-    90deg,
-    rgba(9, 204, 199, 1) 0%,
-    rgba(15, 17, 21, 1) 100%
+    to top,
+    #050714 0%,
+    rgba(5, 7, 20, 0.8) 60%,
+    transparent 100%
   );
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.category-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+.card-arrow {
+  width: 9px;
+  height: 15px;
+  margin-bottom: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hero-sidebar {
+    width: 100%;
+    min-height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .btn-view-all {
+    width: auto;
+    padding: 0 24px;
+  }
+
+  .hero-banner {
+    flex-direction: column;
+  }
+
+  .banner-content {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .banner-image-wrapper {
+    height: 300px;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-sidebar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
 }

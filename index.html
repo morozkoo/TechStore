@@ -1,55 +1,131 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/globals.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/global.js" defer></script>
   </head>
   <body>
-    <div class="desktop">
-      <div class="rectangle"></div>
-      <div class="text-wrapper">TechStore</div>
-      <div class="group">
-        <img class="vector" src="img/vector-6.svg" />
-      </div>
-      
-        <img class="vector-5" src="img/vector-3.svg" />
-        <img class="vector-6" src="img/vector-10.svg" />
-        <img class="vector-7" src="img/vector-5.svg" />
-      </div>
-      <div class="group-2">
-        <img class="vector-8" src="img/vector-1.png" />
-        <img class="vector-9" src="img/vector-8.svg" />
-      </div>
-      <div class="rectangle-2"></div>
-      <div class="text-wrapper-2">Аксессуары</div>
-      <div class="text-wrapper-3">Популярные категории</div>
-      <div class="text-wrapper-4">Новинки</div>
-      <div class="text-wrapper-5">Акции</div>
-      <img
-        class="element"
-        src="img/43edb803-7432-44d4-bca9-1ee0e5b07c1b-1.png"
-      />
-      <div class="rectangle-3"></div>
-      <div class="text-wrapper-6">ПЕРЕДОВЫЕ<br />ГАДЖЕТЫ</div>
-      <p class="p">Лучшие смартфоны для вашей жизни</p>
-      <div class="rectangle-4"></div>
-      <div class="text-wrapper-7">Купить сейчас</div>
-      <div class="ellipse"></div>
-      <div class="ellipse-2"></div>
-      <div class="ellipse-3"></div>
-      <div class="rectangle-5"></div>
-      <div class="text-wrapper-8">Смотреть всё</div>
-      <div class="group-3">
-        <img class="mask-group" src="img/mask-group.png" />
+    <section id="section-header">
+      <header class="site-header">
+        <div class="container header-content">
+          <div class="logo">TechStore</div>
+          <nav class="header-icons">
+            <div class="icon-wrapper">
+              <img src="images/29_30.svg" alt="Search" class="icon" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="images/29_19.svg" alt="Cart" class="icon" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="images/29_25.svg" alt="User" class="icon" />
+            </div>
+          </nav>
+        </div>
+        <div class="header-border"></div>
+      </header>
+    </section>
 
-        <img class="vector-10" src="img/vector-4.svg" />
+    <section id="section-hero">
+      <div class="container hero-container">
+        <aside class="hero-sidebar">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <img src="images/29_52.svg" alt="bullet" class="nav-bullet" />
+              <span>Новинки</span>
+            </li>
+            <li class="nav-item">
+              <img src="images/29_53.svg" alt="bullet" class="nav-bullet" />
+              <span>Аксессуары</span>
+            </li>
+            <li class="nav-item">
+              <img src="images/29_55.svg" alt="bullet" class="nav-bullet" />
+              <span>Акции</span>
+            </li>
+          </ul>
+          <button class="btn-view-all">Смотреть всё</button>
+        </aside>
+
+        <div class="hero-banner">
+          <div class="banner-content">
+            <h2 class="banner-title">ПЕРЕДОВЫЕ<br />ГАДЖЕТЫ</h2>
+            <p class="banner-subtitle">Лучшие смартфоны для вашей жизни</p>
+            <button class="btn-buy">Купить сейчас</button>
+          </div>
+          <div class="banner-image-wrapper">
+            <img
+              src="images/74380b1e64385a8ac9966cd830a80e74a5d57240.png"
+              alt="Advanced Gadgets"
+              class="banner-image"
+            />
+          </div>
+        </div>
       </div>
-      <img class="group-4" src="img/group-5.png" />
-      <img class="group-5" src="img/group-6.png" />
-      <img class="group-6" src="img/group-7.png" />
-      <div class="rectangle-6"></div>
-    </div>
+    </section>
+
+    <section id="section-categories">
+      <div class="container">
+        <h2 class="section-title">Популярные категории</h2>
+
+        <div class="categories-grid">
+          <article class="category-card">
+            <img
+              src="images/74380b1e64385a8ac9966cd830a80e74a5d57240.png"
+              alt="Смартфоны"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="category-name">Смартфоны</span>
+              <img src="images/34_24.svg" alt="arrow" class="card-arrow" />
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img
+              src="images/027d72b106e4c673ce2414fa93556f09b2ab5da8.png"
+              alt="Ноутбуки"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="category-name">Ноутбуки</span>
+              <img src="images/34_29.svg" alt="arrow" class="card-arrow" />
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img
+              src="images/46b89f1998ba6d8d6ff394cff3a0167ae1534938.png"
+              alt="Наушники"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="category-name">Наушники</span>
+              <img src="images/34_38.svg" alt="arrow" class="card-arrow" />
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img
+              src="images/6da65bb1960efba652fbb0cb51ece319d68abd1e.png"
+              alt="Часы"
+              class="card-image"
+            />
+            <div class="card-overlay">
+              <span class="category-name">Часы</span>
+              <img src="images/34_47.svg" alt="arrow" class="card-arrow" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
