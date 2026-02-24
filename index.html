@@ -1,131 +1,576 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechStore</title>
+    <title>TechStore - Интернет-магазин техники</title>
+
+    <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Подключение шрифтов Space Grotesk и Manrope -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS файлы -->
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/global.js" defer></script>
   </head>
   <body>
-    <section id="section-header">
-      <header class="site-header">
-        <div class="container header-content">
-          <div class="logo">TechStore</div>
-          <nav class="header-icons">
-            <div class="icon-wrapper">
-              <img src="images/29_30.svg" alt="Search" class="icon" />
-            </div>
-            <div class="icon-wrapper">
-              <img src="images/29_19.svg" alt="Cart" class="icon" />
-            </div>
-            <div class="icon-wrapper">
-              <img src="images/29_25.svg" alt="User" class="icon" />
-            </div>
-          </nav>
-        </div>
-        <div class="header-border"></div>
-      </header>
-    </section>
+    <!-- Skip-link для доступности -->
+    <a href="#main" class="skip-link">Перейти к основному содержимому</a>
 
-    <section id="section-hero">
-      <div class="container hero-container">
-        <aside class="hero-sidebar">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <img src="images/29_52.svg" alt="bullet" class="nav-bullet" />
-              <span>Новинки</span>
+    <!-- Header с микроразметкой Store -->
+    <header class="header" itemscope itemtype="https://schema.org/Store">
+      <div class="header__container container">
+        <div class="header__logo" itemprop="name">TechStore</div>
+
+        <nav
+          class="header__nav"
+          itemscope
+          itemtype="https://schema.org/SiteNavigationElement"
+        >
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#catalog" class="header__nav-link" itemprop="url"
+                ><span itemprop="name">Каталог</span></a
+              >
             </li>
-            <li class="nav-item">
-              <img src="images/29_53.svg" alt="bullet" class="nav-bullet" />
-              <span>Аксессуары</span>
+            <li class="header__nav-item">
+              <a href="#delivery" class="header__nav-link" itemprop="url"
+                ><span itemprop="name">Доставка</span></a
+              >
             </li>
-            <li class="nav-item">
-              <img src="images/29_55.svg" alt="bullet" class="nav-bullet" />
-              <span>Акции</span>
+            <li class="header__nav-item">
+              <a href="#about" class="header__nav-link" itemprop="url"
+                ><span itemprop="name">О нас</span></a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#contacts" class="header__nav-link" itemprop="url"
+                ><span itemprop="name">Контакты</span></a
+              >
             </li>
           </ul>
-          <button class="btn-view-all">Смотреть всё</button>
-        </aside>
+        </nav>
 
-        <div class="hero-banner">
-          <div class="banner-content">
-            <h2 class="banner-title">ПЕРЕДОВЫЕ<br />ГАДЖЕТЫ</h2>
-            <p class="banner-subtitle">Лучшие смартфоны для вашей жизни</p>
-            <button class="btn-buy">Купить сейчас</button>
+        <div class="header__icons">
+          <div class="header__icon-wrapper">
+            <img src="images/29_30.svg" alt="Поиск" class="header__icon" />
           </div>
-          <div class="banner-image-wrapper">
-            <img
-              src="images/74380b1e64385a8ac9966cd830a80e74a5d57240.png"
-              alt="Advanced Gadgets"
-              class="banner-image"
-            />
+          <div class="header__icon-wrapper">
+            <img src="images/29_19.svg" alt="Корзина" class="header__icon" />
+          </div>
+          <div class="header__icon-wrapper">
+            <img src="images/29_25.svg" alt="Профиль" class="header__icon" />
           </div>
         </div>
       </div>
-    </section>
+      <div class="header__border"></div>
+    </header>
 
-    <section id="section-categories">
-      <div class="container">
-        <h2 class="section-title">Популярные категории</h2>
+    <!-- Main Content -->
+    <main id="main" class="main">
+      <!-- Hero Section -->
+      <section class="hero" id="catalog">
+        <div class="hero__container container">
+          <h1 class="hero__main-title">Интернет-магазин TechStore</h1>
 
-        <div class="categories-grid">
-          <article class="category-card">
-            <img
-              src="images/74380b1e64385a8ac9966cd830a80e74a5d57240.png"
-              alt="Смартфоны"
-              class="card-image"
-            />
-            <div class="card-overlay">
-              <span class="category-name">Смартфоны</span>
-              <img src="images/34_24.svg" alt="arrow" class="card-arrow" />
+          <aside class="hero__sidebar">
+            <nav class="hero__nav">
+              <ul class="hero__nav-list">
+                <li class="hero__nav-item">
+                  <img src="images/29_52.svg" alt="" class="hero__nav-bullet" />
+                  <span>Новинки</span>
+                </li>
+                <li class="hero__nav-item">
+                  <img src="images/29_53.svg" alt="" class="hero__nav-bullet" />
+                  <span>Аксессуары</span>
+                </li>
+                <li class="hero__nav-item">
+                  <img src="images/29_55.svg" alt="" class="hero__nav-bullet" />
+                  <span>Акции</span>
+                </li>
+              </ul>
+            </nav>
+            <button class="hero__btn-all">Смотреть всё</button>
+          </aside>
+
+          <div class="hero__banner">
+            <div class="hero__banner-content">
+              <h2 class="hero__banner-title">ПЕРЕДОВЫЕ<br />ГАДЖЕТЫ</h2>
+              <p class="hero__banner-subtitle">
+                Лучшие смартфоны для вашей жизни
+              </p>
+              <button class="hero__btn-buy">Купить сейчас</button>
             </div>
-          </article>
-
-          <article class="category-card">
-            <img
-              src="images/027d72b106e4c673ce2414fa93556f09b2ab5da8.png"
-              alt="Ноутбуки"
-              class="card-image"
-            />
-            <div class="card-overlay">
-              <span class="category-name">Ноутбуки</span>
-              <img src="images/34_29.svg" alt="arrow" class="card-arrow" />
+            <div class="hero__banner-image-wrapper">
+              <img
+                src="images/74380b1e64385a8ac9966cd830a80e74a5d57240.png"
+                alt="Современные смартфоны и гаджеты"
+                class="hero__banner-image"
+              />
             </div>
-          </article>
+          </div>
+        </div>
+      </section>
 
-          <article class="category-card">
-            <img
-              src="images/46b89f1998ba6d8d6ff394cff3a0167ae1534938.png"
-              alt="Наушники"
-              class="card-image"
-            />
-            <div class="card-overlay">
-              <span class="category-name">Наушники</span>
-              <img src="images/34_38.svg" alt="arrow" class="card-arrow" />
-            </div>
-          </article>
+      <!-- Products Section с микроразметкой Product и Offer -->
+      <section class="products" id="products">
+        <div class="products__container container">
+          <header class="products__header">
+            <h2 class="products__title">Популярные товары</h2>
+            <time class="products__update-time" datetime="2024-02-24"
+              >Обновлено 24 февраля 2024</time
+            >
+          </header>
 
-          <article class="category-card">
-            <img
-              src="images/6da65bb1960efba652fbb0cb51ece319d68abd1e.png"
-              alt="Часы"
-              class="card-image"
-            />
-            <div class="card-overlay">
-              <span class="category-name">Часы</span>
-              <img src="images/34_47.svg" alt="arrow" class="card-arrow" />
+          <div class="products__grid">
+            <!-- Product Card 1 -->
+            <article
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <header class="product-card__header">
+                <h3 class="product-card__title" itemprop="name">
+                  Смартфон Galaxy S23 Ultra
+                </h3>
+              </header>
+
+              <figure class="product-card__figure">
+                <img
+                  src="images/74380b1e64385a8ac9966cd830a80e74a5d57240.png"
+                  alt="Смартфон Samsung Galaxy S23 Ultra черного цвета"
+                  class="product-card__image"
+                  itemprop="image"
+                />
+                <figcaption class="product-card__figcaption">
+                  Samsung Galaxy S23 Ultra
+                </figcaption>
+              </figure>
+
+              <div class="product-card__content">
+                <div class="product-card__description" itemprop="description">
+                  <p>
+                    Флагманский смартфон с 200МП камерой, 12GB RAM, 256GB
+                    памяти. Поддержка 5G, защита от воды IP68.
+                  </p>
+                </div>
+
+                <div
+                  class="product-card__offers"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <div class="product-card__price-block">
+                    <span class="product-card__price-label">Цена:</span>
+                    <span class="product-card__price" itemprop="price"
+                      >89990</span
+                    >
+                    <span
+                      class="product-card__currency"
+                      itemprop="priceCurrency"
+                      >RUB</span
+                    >
+                  </div>
+
+                  <div class="product-card__availability">
+                    <span>Наличие: </span>
+                    <link
+                      itemprop="availability"
+                      href="https://schema.org/InStock"
+                    />
+                    <span>В наличии</span>
+                  </div>
+
+                  <meta itemprop="priceValidUntil" content="2025-12-31" />
+                </div>
+
+                <button
+                  class="product-card__button"
+                  aria-label="Добавить в корзину"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+
+            <!-- Product Card 2 -->
+            <article
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <header class="product-card__header">
+                <h3 class="product-card__title" itemprop="name">
+                  Ноутбук MacBook Pro 16"
+                </h3>
+              </header>
+
+              <figure class="product-card__figure">
+                <img
+                  src="images/027d72b106e4c673ce2414fa93556f09b2ab5da8.png"
+                  alt="Ноутбук MacBook Pro 16 серебристого цвета"
+                  class="product-card__image"
+                  itemprop="image"
+                />
+                <figcaption class="product-card__figcaption">
+                  MacBook Pro 16"
+                </figcaption>
+              </figure>
+
+              <div class="product-card__content">
+                <div class="product-card__description" itemprop="description">
+                  <p>
+                    Профессиональный ноутбук с чипом M3 Pro, 18GB RAM, 512GB
+                    SSD. Дисплей Liquid Retina XDR, до 22 часов работы.
+                  </p>
+                </div>
+
+                <div
+                  class="product-card__offers"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <div class="product-card__price-block">
+                    <span class="product-card__price-label">Цена:</span>
+                    <span class="product-card__price" itemprop="price"
+                      >249990</span
+                    >
+                    <span
+                      class="product-card__currency"
+                      itemprop="priceCurrency"
+                      >RUB</span
+                    >
+                  </div>
+
+                  <div class="product-card__availability">
+                    <span>Наличие: </span>
+                    <link
+                      itemprop="availability"
+                      href="https://schema.org/InStock"
+                    />
+                    <span>В наличии</span>
+                  </div>
+
+                  <meta itemprop="priceValidUntil" content="2025-12-31" />
+                </div>
+
+                <button
+                  class="product-card__button"
+                  aria-label="Добавить в корзину"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+
+            <!-- Product Card 3 -->
+            <article
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <header class="product-card__header">
+                <h3 class="product-card__title" itemprop="name">
+                  Наушники Sony WH-1000XM5
+                </h3>
+              </header>
+
+              <figure class="product-card__figure">
+                <img
+                  src="images/46b89f1998ba6d8d6ff394cff3a0167ae1534938.png"
+                  alt="Наушники Sony WH-1000XM5 черного цвета"
+                  class="product-card__image"
+                  itemprop="image"
+                />
+                <figcaption class="product-card__figcaption">
+                  Sony WH-1000XM5
+                </figcaption>
+              </figure>
+
+              <div class="product-card__content">
+                <div class="product-card__description" itemprop="description">
+                  <p>
+                    Беспроводные наушники с активным шумоподавлением, 30 часов
+                    работы, быстрая зарядка.
+                  </p>
+                </div>
+
+                <div
+                  class="product-card__offers"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <div class="product-card__price-block">
+                    <span class="product-card__price-label">Цена:</span>
+                    <span class="product-card__price" itemprop="price"
+                      >29990</span
+                    >
+                    <span
+                      class="product-card__currency"
+                      itemprop="priceCurrency"
+                      >RUB</span
+                    >
+                  </div>
+
+                  <div class="product-card__availability">
+                    <span>Наличие: </span>
+                    <link
+                      itemprop="availability"
+                      href="https://schema.org/InStock"
+                    />
+                    <span>В наличии</span>
+                  </div>
+
+                  <meta itemprop="priceValidUntil" content="2025-12-31" />
+                </div>
+
+                <button
+                  class="product-card__button"
+                  aria-label="Добавить в корзину"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+
+            <!-- Product Card 4 -->
+            <article
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <header class="product-card__header">
+                <h3 class="product-card__title" itemprop="name">
+                  Apple Watch Series 9
+                </h3>
+              </header>
+
+              <figure class="product-card__figure">
+                <img
+                  src="images/6da65bb1960efba652fbb0cb51ece319d68abd1e.png"
+                  alt="Apple Watch Series 9 серебристого цвета"
+                  class="product-card__image"
+                  itemprop="image"
+                />
+                <figcaption class="product-card__figcaption">
+                  Apple Watch Series 9
+                </figcaption>
+              </figure>
+
+              <div class="product-card__content">
+                <div class="product-card__description" itemprop="description">
+                  <p>
+                    Умные часы с дисплеем Always-On, измерением ЭКГ,
+                    отслеживанием сна и тренировок.
+                  </p>
+                </div>
+
+                <div
+                  class="product-card__offers"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <div class="product-card__price-block">
+                    <span class="product-card__price-label">Цена:</span>
+                    <span class="product-card__price" itemprop="price"
+                      >45990</span
+                    >
+                    <span
+                      class="product-card__currency"
+                      itemprop="priceCurrency"
+                      >RUB</span
+                    >
+                  </div>
+
+                  <div class="product-card__availability">
+                    <span>Наличие: </span>
+                    <link
+                      itemprop="availability"
+                      href="https://schema.org/InStock"
+                    />
+                    <span>В наличии</span>
+                  </div>
+
+                  <meta itemprop="priceValidUntil" content="2025-12-31" />
+                </div>
+
+                <button
+                  class="product-card__button"
+                  aria-label="Добавить в корзину"
+                >
+                  В корзину
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="categories" id="categories">
+        <div class="categories__container container">
+          <h2 class="categories__title">Популярные категории</h2>
+
+          <div class="categories__grid">
+            <article class="category-card">
+              <img
+                src="images/74380b1e64385a8ac9966cd830a80e74a5d57240.png"
+                alt="Смартфоны"
+                class="category-card__image"
+              />
+              <div class="category-card__overlay">
+                <h3 class="category-card__name">Смартфоны</h3>
+                <img
+                  src="images/34_24.svg"
+                  alt=""
+                  class="category-card__arrow"
+                />
+              </div>
+            </article>
+
+            <article class="category-card">
+              <img
+                src="images/027d72b106e4c673ce2414fa93556f09b2ab5da8.png"
+                alt="Ноутбуки"
+                class="category-card__image"
+              />
+              <div class="category-card__overlay">
+                <h3 class="category-card__name">Ноутбуки</h3>
+                <img
+                  src="images/34_29.svg"
+                  alt=""
+                  class="category-card__arrow"
+                />
+              </div>
+            </article>
+
+            <article class="category-card">
+              <img
+                src="images/46b89f1998ba6d8d6ff394cff3a0167ae1534938.png"
+                alt="Наушники"
+                class="category-card__image"
+              />
+              <div class="category-card__overlay">
+                <h3 class="category-card__name">Наушники</h3>
+                <img
+                  src="images/34_38.svg"
+                  alt=""
+                  class="category-card__arrow"
+                />
+              </div>
+            </article>
+
+            <article class="category-card">
+              <img
+                src="images/6da65bb1960efba652fbb0cb51ece319d68abd1e.png"
+                alt="Часы"
+                class="category-card__image"
+              />
+              <div class="category-card__overlay">
+                <h3 class="category-card__name">Часы</h3>
+                <img
+                  src="images/34_47.svg"
+                  alt=""
+                  class="category-card__arrow"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="about__container container">
+          <h2 class="about__title">О нашем магазине</h2>
+
+          <article
+            class="about__article"
+            itemscope
+            itemtype="https://schema.org/Article"
+          >
+            <header class="about__article-header">
+              <h3 class="about__article-title" itemprop="headline">
+                TechStore - ваш проводник в мире технологий
+              </h3>
+              <div
+                itemprop="author"
+                itemscope
+                itemtype="https://schema.org/Person"
+              >
+                <span itemprop="name" class="about__article-author"
+                  >Мороз Савицкий</span
+                >
+              </div>
+            </header>
+
+            <div class="about__article-content" itemprop="articleBody">
+              <p>
+                Мы работаем с 2015 года и предлагаем только оригинальную технику
+                от ведущих мировых производителей. В нашем ассортименте более
+                5000 товаров.
+              </p>
+
+              <h4>Наши преимущества:</h4>
+              <ul>
+                <li>Официальная гарантия</li>
+                <li>Бесплатная доставка</li>
+                <li>Кэшбэк 5%</li>
+                <li>Trade-in</li>
+              </ul>
             </div>
           </article>
         </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
+      <div class="footer__container container">
+        <div class="footer__info">
+          <h2 class="footer__title">TechStore</h2>
+        </div>
+
+        <nav class="footer__nav" id="contacts">
+          <h3 class="footer__nav-title">Контакты</h3>
+          <address class="footer__address">
+            <p>г. Минск ул. Гикало, д. 5</p>
+            <p>
+              Email: <a href="mailto:info@techstore.by">info@techstore.by</a>
+            </p>
+            <p>Тел: <a href="tel:+375297777777">+375 (29) 777-77-77</a></p>
+          </address>
+        </nav>
+
+        <nav class="footer__nav" id="delivery">
+          <h3 class="footer__nav-title">Информация</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Оплата</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Гарантия</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Возврат</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
