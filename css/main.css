@@ -1,15 +1,7 @@
-/* ==========================================================================
-   Main (основной контент)
-   ========================================================================== */
-
 .main {
-  flex: 1; /* Растягивается, чтобы прижать footer вниз */
+  flex: 1;
   background-color: var(--color-bg-dark);
 }
-
-/* ==========================================================================
-   Hero Section
-   ========================================================================== */
 
 .hero {
   padding: var(--spacing-xl) 0;
@@ -21,7 +13,6 @@
   align-items: stretch;
 }
 
-/* Скрытый h1 для SEO */
 .hero__main-title {
   position: absolute;
   width: 1px;
@@ -31,7 +22,6 @@
   overflow: hidden;
 }
 
-/* Боковая панель */
 .hero__sidebar {
   width: var(--sidebar-width);
   background-color: var(--color-bg-sidebar);
@@ -78,7 +68,6 @@
   transform: translateY(-2px);
 }
 
-/* Баннер */
 .hero__banner {
   flex-grow: 1;
   display: flex;
@@ -135,10 +124,6 @@
   object-fit: cover;
 }
 
-/* ==========================================================================
-   Products Section (с Flexbox)
-   ========================================================================== */
-
 .products {
   padding: var(--section-padding-y) 0;
 }
@@ -160,14 +145,12 @@
   font-size: var(--font-size-xs);
 }
 
-/* Grid для карточек товаров */
 .products__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-xxl);
 }
 
-/* Карточка товара */
 .product-card {
   background: var(--color-bg-card);
   border-radius: var(--border-radius-lg);
@@ -284,10 +267,6 @@
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   Categories Section (с CSS Grid)
-   ========================================================================== */
-
 .categories {
   padding: var(--section-padding-y) 0;
 }
@@ -353,10 +332,6 @@
   margin-bottom: 4px;
 }
 
-/* ==========================================================================
-   About Section
-   ========================================================================== */
-
 .about {
   padding: var(--section-padding-y) 0;
   background-color: var(--color-bg-sidebar);
@@ -408,11 +383,6 @@
   margin-bottom: var(--spacing-xs);
 }
 
-/* ==========================================================================
-   Адаптивность для main.css
-   ========================================================================== */
-
-/* Планшеты и небольшие десктопы (до 1024px) */
 @media (max-width: 1024px) {
   .hero__container {
     flex-direction: column;
@@ -449,7 +419,6 @@
   }
 }
 
-/* Планшеты (до 768px) */
 @media (max-width: 768px) {
   .products__grid {
     grid-template-columns: 1fr;
@@ -466,7 +435,6 @@
   }
 }
 
-/* Мобильные (до 600px) */
 @media (max-width: 600px) {
   .hero__sidebar {
     flex-direction: column;

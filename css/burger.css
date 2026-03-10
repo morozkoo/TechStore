@@ -1,13 +1,7 @@
-/* ==========================================================================
-   Бургер-меню для мобильных устройств
-   ========================================================================== */
-
-/* По умолчанию скрыт */
 .burger {
   display: none;
 }
 
-/* Показываем только на мобильных */
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -15,7 +9,6 @@
     z-index: 30;
   }
 
-  /* Кнопка бургера */
   .burger__button {
     width: 40px;
     height: 40px;
@@ -29,7 +22,6 @@
     cursor: pointer;
   }
 
-  /* Полоски бургера */
   .burger__line {
     width: 30px;
     height: 3px;
@@ -38,7 +30,6 @@
     border-radius: 3px;
   }
 
-  /* Анимация при открытом меню */
   .burger--open .burger__line:nth-child(1) {
     transform: rotate(45deg) translate(8px, 8px);
   }
@@ -51,7 +42,6 @@
     transform: rotate(-45deg) translate(7px, -7px);
   }
 
-  /* Выпадающее меню */
   .burger__menu {
     position: absolute;
     top: var(--header-height);
@@ -73,7 +63,6 @@
     visibility: visible;
   }
 
-  /* Навигация в бургере */
   .burger__nav-list {
     display: flex;
     flex-direction: column;
@@ -91,7 +80,6 @@
     color: var(--color-primary);
   }
 
-  /* Затемнение фона */
   .burger__overlay {
     position: fixed;
     top: 0;

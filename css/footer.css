@@ -1,11 +1,7 @@
-/* ==========================================================================
-   Footer (подвал)
-   ========================================================================== */
-
 .footer {
   background-color: var(--color-bg-footer);
   padding: var(--section-padding-y) 0;
-  margin-top: auto; /* Прижимает к низу */
+  margin-top: auto;
 }
 
 .footer__container {
@@ -14,7 +10,6 @@
   gap: var(--spacing-xl);
 }
 
-/* Информация */
 .footer__info {
   display: flex;
   flex-direction: column;
@@ -26,7 +21,6 @@
   font-weight: var(--font-weight-bold);
 }
 
-/* Навигация в подвале */
 .footer__nav-title {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
@@ -68,10 +62,6 @@
   transform: translateX(5px);
   display: inline-block;
 }
-
-/* ==========================================================================
-   Адаптивность подвала
-   ========================================================================== */
 
 @media (max-width: 1024px) {
   .footer__container {

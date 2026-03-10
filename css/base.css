@@ -1,8 +1,3 @@
-/* ==========================================================================
-   Базовые стили и сброс
-   ========================================================================== */
-
-/* Сброс отступов */
 *,
 *::before,
 *::after {
@@ -11,9 +6,8 @@
   box-sizing: border-box;
 }
 
-/* Базовые настройки */
 html {
-  scroll-behavior: smooth; /* Плавная прокрутка */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,7 +22,6 @@ body {
   flex-direction: column;
 }
 
-/* Контейнер */
 .container {
   max-width: var(--container-max-width);
   margin: 0 auto;
@@ -36,7 +29,6 @@ body {
   width: 100%;
 }
 
-/* Типографика */
 h1,
 h2,
 h3,
@@ -48,14 +40,12 @@ h6 {
   letter-spacing: var(--letter-spacing-tight);
 }
 
-/* Изображения */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Ссылки */
 a {
   color: inherit;
   text-decoration: none;
@@ -66,7 +56,6 @@ a:hover {
   color: var(--color-primary);
 }
 
-/* Кнопки */
 button {
   font-family: inherit;
   font-size: inherit;
@@ -76,13 +65,11 @@ button {
   transition: all var(--transition-fast);
 }
 
-/* Списки */
 ul,
 ol {
   list-style: none;
 }
 
-/* Skip-link для доступности */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -98,7 +85,6 @@ ol {
   top: 0;
 }
 
-/* Вспомогательные классы */
 .visually-hidden {
   position: absolute;
   width: 1px;
