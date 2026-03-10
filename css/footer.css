@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Footer (подвал)
+   ========================================================================== */
+
+.footer {
+  background-color: var(--color-bg-footer);
+  padding: var(--section-padding-y) 0;
+  margin-top: auto; /* Прижимает к низу */
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+/* Информация */
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Навигация в подвале */
+.footer__nav-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.footer__address {
+  font-style: normal;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.footer__address p {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer__address a {
+  color: var(--color-primary);
+}
+
+.footer__address a:hover {
+  text-decoration: underline;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer__link {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--color-primary);
+  transform: translateX(5px);
+  display: inline-block;
+}
+
+/* ==========================================================================
+   Адаптивность подвала
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .footer__info {
+    text-align: center;
+  }
+
+  .footer__nav {
+    text-align: center;
+  }
+
+  .footer__list {
+    align-items: center;
+  }
+}

@@ -55,7 +55,33 @@
             </li>
           </ul>
         </nav>
+        <!-- В header, рядом с header__icons -->
+        <div class="burger" id="burger">
+          <button class="burger__button" aria-label="Открыть меню">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
 
+          <nav class="burger__menu">
+            <ul class="burger__nav-list">
+              <li class="burger__nav-item">
+                <a href="#catalog" class="burger__nav-link">Каталог</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#delivery" class="burger__nav-link">Доставка</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#about" class="burger__nav-link">О нас</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#contacts" class="burger__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="burger__overlay"></div>
+        </div>
         <div class="header__icons">
           <div class="header__icon-wrapper">
             <img src="images/29_30.svg" alt="Поиск" class="header__icon" />
