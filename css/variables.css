@@ -74,8 +74,3 @@
   --breakpoint-desktop: 1024px;
   --breakpoint-wide: 1200px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-  }
-}
