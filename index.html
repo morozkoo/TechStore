@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ru">
   <head>
@@ -5,23 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechStore - Интернет-магазин техники</title>
 
-    <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Подключение шрифтов Space Grotesk и Manrope -->
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- CSS файлы -->
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/global.js" defer></script>
   </head>
   <body>
-
     <a href="#main" class="skip-link">Перейти к основному содержимому</a>
 
     <header class="header" itemscope itemtype="https://schema.org/Store">
@@ -56,7 +53,32 @@
             </li>
           </ul>
         </nav>
+        <div class="burger" id="burger">
+          <button class="burger__button" aria-label="Открыть меню">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
 
+          <nav class="burger__menu">
+            <ul class="burger__nav-list">
+              <li class="burger__nav-item">
+                <a href="#catalog" class="burger__nav-link">Каталог</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#delivery" class="burger__nav-link">Доставка</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#about" class="burger__nav-link">О нас</a>
+              </li>
+              <li class="burger__nav-item">
+                <a href="#contacts" class="burger__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="burger__overlay"></div>
+        </div>
         <div class="header__icons">
           <div class="header__icon-wrapper">
             <img src="images/29_30.svg" alt="Поиск" class="header__icon" />
@@ -73,7 +95,6 @@
     </header>
 
     <main id="main" class="main">
-
       <section class="hero" id="catalog">
         <div class="hero__container container">
           <h1 class="hero__main-title">Интернет-магазин TechStore</h1>
@@ -117,17 +138,15 @@
         </div>
       </section>
 
+
       <section class="products" id="products">
         <div class="products__container container">
           <header class="products__header">
             <h2 class="products__title">Популярные товары</h2>
-            <time class="products__update-time" datetime="2024-02-24"
-              >Обновлено 24 февраля 2024</time
-            >
           </header>
 
           <div class="products__grid">
-            <!-- Product Card 1 -->
+
             <article
               class="product-card"
               itemscope
@@ -168,12 +187,12 @@
                   <div class="product-card__price-block">
                     <span class="product-card__price-label">Цена:</span>
                     <span class="product-card__price" itemprop="price"
-                      >89990</span
+                      >2890</span
                     >
                     <span
                       class="product-card__currency"
                       itemprop="priceCurrency"
-                      >RUB</span
+                      >BYN</span
                     >
                   </div>
 
@@ -198,7 +217,6 @@
               </div>
             </article>
 
-            <!-- Product Card 2 -->
             <article
               class="product-card"
               itemscope
@@ -239,12 +257,12 @@
                   <div class="product-card__price-block">
                     <span class="product-card__price-label">Цена:</span>
                     <span class="product-card__price" itemprop="price"
-                      >249990</span
+                      >4500</span
                     >
                     <span
                       class="product-card__currency"
                       itemprop="priceCurrency"
-                      >RUB</span
+                      >BYN</span
                     >
                   </div>
 
@@ -269,7 +287,6 @@
               </div>
             </article>
 
-            <!-- Product Card 3 -->
             <article
               class="product-card"
               itemscope
@@ -310,12 +327,12 @@
                   <div class="product-card__price-block">
                     <span class="product-card__price-label">Цена:</span>
                     <span class="product-card__price" itemprop="price"
-                      >29990</span
+                      >700</span
                     >
                     <span
                       class="product-card__currency"
                       itemprop="priceCurrency"
-                      >RUB</span
+                      >BYN</span
                     >
                   </div>
 
@@ -340,7 +357,6 @@
               </div>
             </article>
 
-            <!-- Product Card 4 -->
             <article
               class="product-card"
               itemscope
@@ -381,12 +397,12 @@
                   <div class="product-card__price-block">
                     <span class="product-card__price-label">Цена:</span>
                     <span class="product-card__price" itemprop="price"
-                      >45990</span
+                      >1390</span
                     >
                     <span
                       class="product-card__currency"
                       itemprop="priceCurrency"
-                      >RUB</span
+                      >BYN</span
                     >
                   </div>
 
