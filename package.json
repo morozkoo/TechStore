@@ -1,6 +1,14 @@
 {
+  "type": "module",
+  "scripts": {
+    "start:stripe": "node server.js"
+  },
   "dependencies": {
-    "lodash": "^4.17.23"
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "lodash": "^4.17.23",
+    "stripe": "^22.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
