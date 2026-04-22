@@ -1,0 +1,42 @@
+export const products = [
+  {
+    id: 1,
+    name: 'Ноутбук Pro X',
+    price: 1200,
+    rating: 4.5,
+    description: 'Мощный ноутбук для работы и игр',
+    image: 'https://via.placeholder.com/200',
+  },
+  {
+    id: 2,
+    name: 'Смартфон Ultra',
+    price: 800,
+    rating: 4.8,
+    description: 'Отличная камера и быстрый процессор',
+    image: 'https://via.placeholder.com/200',
+  },
+  {
+    id: 3,
+    name: 'Беспроводные наушники',
+    price: 150,
+    rating: 4.2,
+    description: 'Отличный звук и шумоподавление',
+    image: 'https://via.placeholder.com/200',
+  },
+  {
+    id: 4,
+    name: 'Игровая мышь',
+    price: 80,
+    rating: 4.0,
+    description: 'Высокая точность и RGB подсветка',
+    image: 'https://via.placeholder.com/200',
+  },
+  {
+    id: 5,
+    name: 'Механическая клавиатура',
+    price: 120,
+    rating: 4.6,
+    description: 'Удобная для печати и игр',
+    image: 'https://via.placeholder.com/200',
+  },
+];
